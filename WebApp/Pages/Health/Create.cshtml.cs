@@ -31,12 +31,12 @@ namespace WebApp.Pages.Health
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Informations == null || Information == null)
+          if (!ModelState.IsValid || _context.Infs == null || Information == null)
             {
                 return Page();
             }
 
-            _context.Informations.Add(Information);
+            _context.Infs.Add(Information);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

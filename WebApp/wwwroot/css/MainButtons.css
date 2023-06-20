@@ -1,0 +1,62 @@
+﻿.Account {
+    background-color: #80ff80;
+    border-radius: 30px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 5px;
+    text-align: center;
+    transition: all .5s;
+    user-select: none;
+    margin-top: 500px;
+    margin-right: 100px;
+    margin-left: 100px;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+    .Account:hover {
+        box-shadow: #80ff80 0 1px 30px;
+        transition-duration: .1s;
+    }
+
+@media (min-width: 768px) {
+    .Account {
+        padding: 10px;
+    }
+}
+
+.Health {
+    background-color: #80ff80;
+    border-radius: 30px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 5px;
+    text-align: center;
+    transition: all .5s;
+    user-select: none;
+    margin-right: 100px;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+    .Health:hover {
+        box-shadow: #80ff80 0 1px 30px;
+        transition-duration: .1s;
+    }
+
+@media (min-width: 768px) {
+    .Health {
+        padding: 10px;
+    }
+}

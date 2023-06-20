@@ -21,7 +21,7 @@ namespace Data
         /// <summary>
         /// Задава колекция Marks.
         /// </summary>
-        public DbSet<Information> Informations { get; set; }
+        public DbSet<Information> Infs { get; set; }
 
         /// <summary>
         /// Задава колекция Students.

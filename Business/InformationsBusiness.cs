@@ -20,7 +20,7 @@ namespace Business
         {
             using (context = new Context())
             {
-                return context.Informations.ToList();
+                return context.Infs.ToList();
             }
         }
 
@@ -31,7 +31,7 @@ namespace Business
         {
             using (context = new Context())
             {
-                return context.Informations.Find(id);
+                return context.Infs.Find(id);
             }
         }
 
@@ -42,7 +42,7 @@ namespace Business
         {
             using (context = new Context())
             {
-                context.Informations.Add(inf);
+                context.Infs.Add(inf);
                 context.SaveChanges();
             }
         }
@@ -54,7 +54,7 @@ namespace Business
         {
             using (context = new Context())
             {
-                var item = context.Informations.Find(inf.Id);
+                var item = context.Infs.Find(inf.Id);
                 if (item != null)
                 {
                     context.Entry(item).CurrentValues.SetValues(inf);
@@ -70,10 +70,10 @@ namespace Business
         {
             using (context = new Context())
             {
-                var inf = context.Informations.Find(id);
+                var inf = context.Infs.Find(id);
                 if (inf != null)
                 {
-                    context.Informations.Remove(inf);
+                    context.Infs.Remove(inf);
                     context.SaveChanges();
                 }
             }

@@ -23,12 +23,12 @@ namespace WebApp.Pages.Health
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Informations == null)
+            if (id == null || _context.Infs == null)
             {
                 return NotFound();
             }
 
-            var information = await _context.Informations.FirstOrDefaultAsync(m => m.Id == id);
+            var information = await _context.Infs.FirstOrDefaultAsync(m => m.Id == id);
             if (information == null)
             {
                 return NotFound();

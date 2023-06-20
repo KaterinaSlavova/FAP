@@ -36,7 +36,7 @@ namespace Data.Model
         /// Задаване на оценки на ученика.
         /// </summary>
 
-        public int Heigtht { get; set; }
+        public int Height { get; set; }
 
         /// <summary>
         /// Задаване на оценки на ученика.

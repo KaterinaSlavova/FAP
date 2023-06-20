@@ -23,9 +23,9 @@ namespace WebApp.Pages.Health
 
         public async Task OnGetAsync()
         {
-            if (_context.Informations != null)
+            if (_context.Infs != null)
             {
-                Information = await _context.Informations.ToListAsync();
+                Information = await _context.Infs.ToListAsync();
             }
         }
     }

@@ -1,0 +1,19 @@
+﻿.linkbutton:link {
+    text-decoration: none;
+    color: #80ff80;
+}
+
+.linkbutton:visited {
+    text-decoration: underline;
+    color: #80ff80;
+}
+
+.linkbutton:hover {
+    text-decoration: underline;
+    color: #80ff80;
+}
+
+.linkbutton:active {
+    text-decoration: underline;
+    color: #80ff80;
+}
