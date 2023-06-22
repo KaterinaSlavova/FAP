@@ -1,4 +1,4 @@
-# Fitness App
+# FAP
 
 Welcome to FAP! This is a simple and user-friendly application designed to help you track and manage your fitness goals. Whether you are a fitness enthusiast or just starting your fitness journey, this app is here to assist you in staying motivated and achieving your desired results.
 
