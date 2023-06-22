@@ -5,10 +5,17 @@
     ViewData["Title"] = "Index";
 }
 
+<style>
+    body {
+        background: #011628;
+        font-family: 'Poppins';
+    }
+</style>
+
 <p>
-    <a asp-page="Create">Въведи информация</a>
+    <a asp-page="Create" class="Create">Add information</a>
 </p>
-<table class="table">
+<table class="table text-white">
     <thead>
         <tr>
             <th>
@@ -48,9 +55,9 @@
                 @Html.DisplayFor(modelItem => item.Carbs)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="./Edit" class="btn btn-warning" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" class="btn btn-success" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" class="btn btn-danger" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

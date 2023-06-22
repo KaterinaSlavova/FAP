@@ -13,7 +13,7 @@
     text-align: center;
     transition: all .5s;
     user-select: none;
-    margin-top: 500px;
+    margin-top: 600px;
     margin-right: 100px;
     margin-left: 100px;
     -webkit-user-select: none;
@@ -26,7 +26,7 @@
 
 @media (min-width: 768px) {
     .Account {
-        padding: 10px;
+        padding: 10x;
     }
 }
 

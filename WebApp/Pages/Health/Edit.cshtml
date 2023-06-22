@@ -5,49 +5,55 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<style>
+    body {
+        background: #011628;
+        font-family: 'Poppins';
+    }
+</style>
 
-<h4>Information</h4>
-<hr />
+<h1 class="text-white">Редактиране</h1>
+
+
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Information.Id" />
             <div class="form-group">
-                <label asp-for="Information.Workout" class="control-label"></label>
+                <label asp-for="Information.Workout" class="control-label text-white"></label>
                 <input asp-for="Information.Workout" class="form-control" />
                 <span asp-validation-for="Information.Workout" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Information.Calories" class="control-label"></label>
+                <label asp-for="Information.Calories" class="control-label text-white"></label>
                 <input asp-for="Information.Calories" class="form-control" />
                 <span asp-validation-for="Information.Calories" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Information.Protein" class="control-label"></label>
+                <label asp-for="Information.Protein" class="control-label text-white"></label>
                 <input asp-for="Information.Protein" class="form-control" />
                 <span asp-validation-for="Information.Protein" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Information.Fat" class="control-label"></label>
+                <label asp-for="Information.Fat" class="control-label text-white"></label>
                 <input asp-for="Information.Fat" class="form-control" />
                 <span asp-validation-for="Information.Fat" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Information.Carbs" class="control-label"></label>
+                <label asp-for="Information.Carbs" class="control-label text-white"></label>
                 <input asp-for="Information.Carbs" class="form-control" />
                 <span asp-validation-for="Information.Carbs" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="Index" class="btn btn-outline-secondary">Go back</a>
 </div>
 
 @section Scripts {

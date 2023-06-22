@@ -7,14 +7,14 @@ using Data.Model;
 namespace Business
 {
     /// <summary>
-    /// Клас StudentsBusiness.
+    /// Клас PersonsBusiness.
     /// </summary>
     public class PersonsBusiness
     {
         private Context context { get; set; }
 
         /// <summary>
-        /// Взема всички ученици от базата данни.
+        /// Взема всички потребители от базата данни.
         /// </summary>
         public List<Person> GetAllPeople()
         {
@@ -25,7 +25,7 @@ namespace Business
         }
 
         /// <summary>
-        /// Намира ученик по номер.
+        /// Намира потребител по номер.
         /// </summary>
         public Person GetInfPerson(int id)
         {
@@ -36,7 +36,7 @@ namespace Business
         }
 
         /// <summary>
-        ///  Добавя ученик в базата данни.
+        ///  Добавя потребител в базата данни.
         /// </summary>
         public void AddPerson(Person person)
         {
@@ -48,7 +48,7 @@ namespace Business
         }
 
         /// <summary>
-        /// Променя информацията за ученик в базата данни по номер.
+        /// Променя информацията за потребител в базата данни по номер.
         /// </summary>
         public void UpdateInformation(Person person)
         {
@@ -64,7 +64,7 @@ namespace Business
         }
 
         /// <summary>
-        /// Изтрива ученик от базата данни по номер.
+        /// Изтрива потребител от базата данни по номер.
         /// </summary>
         public void DeletePerson(int id)
         {

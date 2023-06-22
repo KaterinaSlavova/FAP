@@ -5,47 +5,53 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<style>
+    body {
+        background: #011628;
+        font-family: 'Poppins';
+    }
+</style>
 
-<h3>Сигурни ли сте, че искате да изтриете информацията?</h3>
+<h1 class="text-white">Изтриване</h1>
+
+<h3 class="text-white">Сигурни ли сте, че искате да изтриете информацията?</h3>
 <div>
-    <h4>Person</h4>
     <hr />
     <dl class="row">
-        <dt class="col-sm-2">
+        <dt class="col-sm-2 text-white">
             @Html.DisplayNameFor(model => model.Person.Name)
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-10 text-white">
             @Html.DisplayFor(model => model.Person.Name)
         </dd>
-        <dt class="col-sm-2">
+        <dt class="col-sm-2 text-white">
             @Html.DisplayNameFor(model => model.Person.Age)
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-10 text-white">
             @Html.DisplayFor(model => model.Person.Age)
         </dd>
-        <dt class="col-sm-2">
+        <dt class="col-sm-2 text-white">
             @Html.DisplayNameFor(model => model.Person.Height)
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-10 text-white">
             @Html.DisplayFor(model => model.Person.Height)
         </dd>
-        <dt class="col-sm-2">
+        <dt class="col-sm-2 text-white">
             @Html.DisplayNameFor(model => model.Person.Weight)
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-10 text-white">
             @Html.DisplayFor(model => model.Person.Weight)
         </dd>
-        <dt class="col-sm-2">
+        <dt class="col-sm-2 text-white">
             @Html.DisplayNameFor(model => model.Person.Gender)
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-10 text-white">
             @Html.DisplayFor(model => model.Person.Gender)
         </dd>
-        <dt class="col-sm-2">
+        <dt class="col-sm-2 text-white">
             @Html.DisplayNameFor(model => model.Person.BirthDate)
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-10 text-white">
             @Html.DisplayFor(model => model.Person.BirthDate)
         </dd>
     </dl>
@@ -53,6 +59,6 @@
     <form method="post">
         <input type="hidden" asp-for="Person.Id" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <a asp-page="Index" class="btn btn-outline-secondary">Go back</a>
     </form>
 </div>

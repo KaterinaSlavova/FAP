@@ -3,22 +3,43 @@
 @{
     ViewData["Title"] = "Index";
 }
+
 <style>
-    body{
-        background:cadetblue;
+    body {
+        background: #011628;
+        font-family:'Poppins';
     }
 </style>
-<h1>Създай Акаунт</h1>
+
+<h1 class="text-white">Създай Акаунт</h1>
 
 <p>
-    <a asp-page="Create">Create Acount</a>
+    <a asp-page="Create" class="Create">Create Your Account</a>
 </p>
 
+<div id="container">
+    <div class="steam" id="steam1"> </div>
+    <div class="steam" id="steam2"> </div>
+    <div class="steam" id="steam3"> </div>
+    <div class="steam" id="steam4"> </div>
 
-@foreach (var item in Model.Person) {
+    <div id="cup">
+        <div id="cup-body">
+            <div id="cup-shade"></div>
+        </div>
+        <div id="cup-handle"></div>
+    </div>
+
+    <div id="saucer"></div>
+
+    <div id="shadow"></div>
+</div>
+
+
+     @foreach (var item in Model.Person) {
        
             <div style="font-size:70px;">      
-                <a asp-page="./Details" asp-route-id="@item.Id" class="linkbutton">Details</a> 
+                <a asp-page="./Details" asp-route-id="@item.Id" class="MainDetails">Details</a> 
             </div>
 
 }

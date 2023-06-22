@@ -7,14 +7,14 @@ using Data.Model;
 namespace Business
 {
     /// <summary>
-    /// Клас MarksBusiness.
+    /// Клас InformationsBusiness.
     /// </summary>
     public class InformationsBusiness
     {
         private Context context { get; set; }
 
         /// <summary>
-        /// Взима всички оценки от базата данни.
+        /// Взима всички цялата информация от базата данни.
         /// </summary>
         public List<Information> GetAllInformations()
         {
@@ -25,7 +25,7 @@ namespace Business
         }
 
         /// <summary>
-        /// Взема оценка от базата данни по номер на ученика.
+        /// Взема информация от базата данни по номер на информацията.
         /// </summary>
         public Information GetInformaton(int id)
         {
@@ -36,7 +36,7 @@ namespace Business
         }
 
         /// <summary>
-        /// Вкарва оценка в базата данни.
+        /// Вкарва информация в базата данни.
         /// </summary>
         public void AddInformation(Information inf)
         {
@@ -48,7 +48,7 @@ namespace Business
         }
 
         /// <summary>
-        /// Променя оценка от базата данни по номер на ученика.
+        /// Променя информация от базата данни по номер на информацията.
         /// </summary>
         public void UpdateInformation(Information inf)
         {
@@ -64,7 +64,7 @@ namespace Business
         }
 
         /// <summary>
-        /// Изтрива оценка от базата данни по номер на ученика.
+        /// Изтрива информация от базата данни по номер на информацията.
         /// </summary>
         public void DeleteInformation(int id)
         {

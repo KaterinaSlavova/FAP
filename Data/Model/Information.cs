@@ -11,43 +11,43 @@ using System.Threading.Tasks;
 namespace Data.Model
 {
     /// <summary>
-    /// Клас Mark, с атрибути Id, Stud, Grade, Subject, Teacher, Date.
+    /// Клас Information, с атрибути Id, Workout, Calories, Protein, Fat, Carbs.
     /// </summary>
     public class Information
     {
         /// <summary>
-        /// Задване на номер на ученика.
+        /// Задване на номер на информацията.
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
-        /// Задаване на име на ученика.
+        /// Задаване на вид тренировка.
         /// </summary>
-
+        [DisplayName("Вид тренировка:")]
         public string Workout { get; set; }
 
         /// <summary>
-        /// Задаване на оценки на ученика.
+        /// Задаване на калории.
         /// </summary>
-
+        [DisplayName("Калории:")]
         public int Calories { get; set; }
 
         /// <summary>
-        ///  Задаване на учебен предмет.
+        ///  Задаване на протеин.
         /// </summary>
-
+        [DisplayName("Протеини:")]
         public int Protein { get; set; }
 
         /// <summary>
-        /// Задаване на име на учител.
+        /// Задаване на мазнини.
         /// </summary>
-
+        [DisplayName("Мазнини:")]
         public int Fat { get; set; }
 
         /// <summary>
-        /// Задаване на дата на въвеждане на информацията.
+        /// Задаване на въглехидрати.
         /// </summary>
-
+        [DisplayName("Въглехидрати:")]
         public int Carbs { get; set; }
 
     }
